@@ -1,29 +1,31 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>莊莊 — 攝影作品集</title>
-<meta name="description" content="莊莊的攝影作品集">
+<title>莊莊 — 人像攝影作品集</title>
+<meta name="description" content="莊莊的人像攝影作品集">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="nav">
-  <a class="logo" href="#top">莊莊<span>.</span></a>
+  <a class="logo" href="index.html">莊莊<span>.</span></a>
   <div class="links">
-    <a href="#work">作品</a>
-    <a href="#about">關於</a>
-    <a href="#contact">聯絡</a>
+    <a href="index.html" class="active">首頁</a>
+    <a href="hk.html" >港風</a>
+    <a href="indoor.html" >室內人像</a>
+    <a href="cosplay.html" >Cosplay</a>
+    <a href="graduation.html" >畢業照</a>
+    <a href="gear.html" >器材</a>
   </div>
 </nav>
-
 <header class="hero" id="top">
   <img class="avatar" src="images/avatar.jpg" alt="莊莊的頭像" width="120" height="120">
-  <p class="eyebrow">攝影作品集 · 2026</p>
+  <p class="eyebrow">PORTRAIT PHOTOGRAPHY · '26</p>
   <h1>我是<em>莊莊</em>,<br>用鏡頭留住每個瞬間。</h1>
   <p class="lead">專注人像攝影,喜歡在自然光裡捕捉人物最真實的神情與氛圍。目前接受人像拍攝邀約。</p>
   <div class="cta">
@@ -35,18 +37,26 @@
 <main>
   <section id="work">
     <div class="section-head">
-      <h2>精選作品</h2>
-      <span>Selected Works</span>
+      <h2>作品分類</h2>
+      <span>SELECTED WORKS</span>
     </div>
-
-    <!-- 把照片放進 images 資料夾,檔名對應下面的 src。沒有照片時會顯示色塊。 -->
-    <div class="gallery">
-      <figure class="tall"><img src="images/photo1.jpg" alt="作品一" loading="lazy" onerror="this.remove()"><figcaption>作品一 · 地點 / 年份</figcaption></figure>
-      <figure><img src="images/photo2.jpg" alt="作品二" loading="lazy" onerror="this.remove()"><figcaption>作品二 · 地點 / 年份</figcaption></figure>
-      <figure><img src="images/photo3.jpg" alt="作品三" loading="lazy" onerror="this.remove()"><figcaption>作品三 · 地點 / 年份</figcaption></figure>
-      <figure class="tall"><img src="images/photo4.jpg" alt="作品四" loading="lazy" onerror="this.remove()"><figcaption>作品四 · 地點 / 年份</figcaption></figure>
-      <figure><img src="images/photo5.jpg" alt="作品五" loading="lazy" onerror="this.remove()"><figcaption>作品五 · 地點 / 年份</figcaption></figure>
-      <figure><img src="images/photo6.jpg" alt="作品六" loading="lazy" onerror="this.remove()"><figcaption>作品六 · 地點 / 年份</figcaption></figure>
+    <div class="cats">
+      <a class="cat" href="hk.html">
+        <div class="cover"><img src="images/hk/1.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="cat-info"><span class="num">01</span><h3>港風</h3><span class="arrow">→</span></div>
+      </a>
+      <a class="cat" href="indoor.html">
+        <div class="cover"><img src="images/indoor/1.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="cat-info"><span class="num">02</span><h3>室內人像</h3><span class="arrow">→</span></div>
+      </a>
+      <a class="cat" href="cosplay.html">
+        <div class="cover"><img src="images/cosplay/1.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="cat-info"><span class="num">03</span><h3>Cosplay</h3><span class="arrow">→</span></div>
+      </a>
+      <a class="cat" href="graduation.html">
+        <div class="cover"><img src="images/graduation/1.jpg" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="cat-info"><span class="num">04</span><h3>畢業照</h3><span class="arrow">→</span></div>
+      </a>
     </div>
   </section>
 
@@ -61,8 +71,10 @@
         <li>機身:Fujifilm X-T5</li>
         <li>鏡頭:Tamron 17-70mm</li>
         <li>鏡頭:Viltrox 25mm / 56mm</li>
+        <li>鏡頭:銘匠 7.5mm f/2 魚眼</li>
       </ul>
     </div>
+    <p class="more"><a href="gear.html">查看完整器材 →</a></p>
   </section>
 
   <section id="contact" class="contact">
@@ -70,11 +82,12 @@
     <a class="mail" href="mailto:garlandbest100@gmail.com">garlandbest100@gmail.com</a>
     <div class="social">
       <a href="https://www.instagram.com/ZZ_PHOTO_G.GIA/" target="_blank" rel="noopener">Instagram @ZZ_PHOTO_G.GIA ↗</a>
-      <a href="https://github.com/garlandbest100-hub" target="_blank" rel="noopener">GitHub ↗</a>
     </div>
   </section>
 </main>
-
-<footer>© 2026 莊莊</footer>
+<footer>© 2026 莊莊 · SHOT ON FUJIFILM X-T5</footer>
 </body>
 </html>
+
+
+
