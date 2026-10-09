@@ -3,37 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>garlandbest100-hub 的個人網站</title>
+<title>莊莊 — 攝影作品集</title>
+<meta name="description" content="莊莊的攝影作品集">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>嗨,我是 garlandbest100-hub 👋</h1>
-  <p>這是我的第一個 GitHub 網站。</p>
-  <a class="btn" href="https://github.com/garlandbest100-hub">我的 GitHub</a>
+
+<nav class="nav">
+  <a class="logo" href="#top">莊莊<span>.</span></a>
+  <div class="links">
+    <a href="#work">作品</a>
+    <a href="#about">關於</a>
+    <a href="#contact">聯絡</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <img class="avatar" src="images/avatar.jpg" alt="莊莊的頭像" width="120" height="120">
+  <p class="eyebrow">攝影作品集 · 2026</p>
+  <h1>我是<em>莊莊</em>,<br>用鏡頭留住每個瞬間。</h1>
+  <p class="lead">專注人像攝影,喜歡在自然光裡捕捉人物最真實的神情與氛圍。目前接受人像拍攝邀約。</p>
+  <div class="cta">
+    <a class="btn primary" href="#work">看我的作品</a>
+    <a class="btn" href="#contact">聯絡我</a>
+  </div>
 </header>
 
 <main>
-  <section>
-    <h2>關於我</h2>
-    <p>在這裡寫一段自我介紹:你是誰、你在學什麼、你喜歡做什麼。</p>
-  </section>
+  <section id="work">
+    <div class="section-head">
+      <h2>精選作品</h2>
+      <span>Selected Works</span>
+    </div>
 
-  <section>
-    <h2>我的作品</h2>
-    <div class="cards">
-      <div class="card"><h3>作品一</h3><p>簡短說明這個作品。</p></div>
-      <div class="card"><h3>作品二</h3><p>簡短說明這個作品。</p></div>
-      <div class="card"><h3>作品三</h3><p>簡短說明這個作品。</p></div>
+    <!-- 把照片放進 images 資料夾,檔名對應下面的 src。沒有照片時會顯示色塊。 -->
+    <div class="gallery">
+      <figure class="tall"><img src="images/photo1.jpg" alt="作品一" loading="lazy" onerror="this.remove()"><figcaption>作品一 · 地點 / 年份</figcaption></figure>
+      <figure><img src="images/photo2.jpg" alt="作品二" loading="lazy" onerror="this.remove()"><figcaption>作品二 · 地點 / 年份</figcaption></figure>
+      <figure><img src="images/photo3.jpg" alt="作品三" loading="lazy" onerror="this.remove()"><figcaption>作品三 · 地點 / 年份</figcaption></figure>
+      <figure class="tall"><img src="images/photo4.jpg" alt="作品四" loading="lazy" onerror="this.remove()"><figcaption>作品四 · 地點 / 年份</figcaption></figure>
+      <figure><img src="images/photo5.jpg" alt="作品五" loading="lazy" onerror="this.remove()"><figcaption>作品五 · 地點 / 年份</figcaption></figure>
+      <figure><img src="images/photo6.jpg" alt="作品六" loading="lazy" onerror="this.remove()"><figcaption>作品六 · 地點 / 年份</figcaption></figure>
     </div>
   </section>
 
-  <section>
-    <h2>聯絡我</h2>
-    <p>Email:your@email.com</p>
+  <section id="about">
+    <div class="section-head">
+      <h2>關於我</h2>
+    </div>
+    <div class="about-grid">
+      <p>我是莊莊,專注拍攝人像。比起擺好的姿勢,我更在意拍攝時的互動,讓被攝者放鬆下來,留下自然又有個性的畫面。使用 Fujifilm 的色彩與質感,搭配不同焦段,呈現不同的人像氛圍。</p>
+      <ul class="skills">
+        <li>人像攝影</li>
+        <li>機身:Fujifilm X-T5</li>
+        <li>鏡頭:Tamron 17-70mm</li>
+        <li>鏡頭:Viltrox 25mm / 56mm</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>想合作拍攝嗎?</h2>
+    <a class="mail" href="mailto:garlandbest100@gmail.com">garlandbest100@gmail.com</a>
+    <div class="social">
+      <a href="https://www.instagram.com/ZZ_PHOTO_G.GIA/" target="_blank" rel="noopener">Instagram @ZZ_PHOTO_G.GIA ↗</a>
+      <a href="https://github.com/garlandbest100-hub" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
   </section>
 </main>
 
-<footer>© 2026 garlandbest100-hub</footer>
+<footer>© 2026 莊莊</footer>
 </body>
 </html>
