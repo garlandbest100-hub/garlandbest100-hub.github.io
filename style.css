@@ -266,3 +266,23 @@ footer { text-align: center; color: var(--muted); font-size: 0.75rem; letter-spa
   .about-grid { grid-template-columns: 1fr; gap: 24px; }
   .links { gap: 18px; }
 }
+
+/* 作品子分頁 */
+.subtabs { display: flex; flex-wrap: wrap; gap: 8px 10px; padding-top: 8px; border-bottom: 2px solid var(--fg); }
+.subtabs button {
+  font: inherit;
+  font-family: "Space Mono", "Noto Serif TC", monospace;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: transparent;
+  border: 1.5px solid var(--line);
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: color .2s, background .2s, border-color .2s;
+}
+.subtabs button:hover { color: var(--accent); border-color: var(--accent); }
+.subtabs button.active { background: var(--fg); border-color: var(--fg); color: var(--bg); }
+.subtabs button:focus-visible { outline: 2px solid var(--stamp); outline-offset: 2px; }
+.tabpanel[hidden] { display: none; }
